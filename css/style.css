@@ -194,54 +194,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .main-menu-wrapper li ul {
   display: none;
 }
-/* line 25, ../sass/_main-menu.scss */
+/* line 24, ../sass/_main-menu.scss */
+.main-menu-wrapper li a {
+  font-weight: bold;
+}
+/* line 29, ../sass/_main-menu.scss */
 .main-menu-wrapper li.active {
   border-left: 2px solid orange;
   border-right: 2px solid orange;
   border-top: 2px solid orange;
   background: white;
 }
-/* line 31, ../sass/_main-menu.scss */
+/* line 35, ../sass/_main-menu.scss */
 .main-menu-wrapper li.active a {
   color: #2e5956;
 }
-/* line 36, ../sass/_main-menu.scss */
+/* line 40, ../sass/_main-menu.scss */
 .main-menu-wrapper ul {
   bottom: -2px;
   position: absolute;
 }
-/* line 41, ../sass/_main-menu.scss */
+/* line 45, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top {
   top: 0px;
   right: 0px;
 }
-/* line 45, ../sass/_main-menu.scss */
+/* line 49, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top li {
   text-transform: lowercase;
 }
-/* line 49, ../sass/_main-menu.scss */
+/* line 53, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .vk {
   text-transform: uppercase;
   padding: 10px 15px 10px 15px;
 }
-/* line 54, ../sass/_main-menu.scss */
+/* line 58, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .facebook {
   padding: 10px 15px 10px 15px;
 }
-/* line 58, ../sass/_main-menu.scss */
+/* line 62, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .twitter {
   background: url(../images/twitter.png) 8px 7px #2e5956 no-repeat;
   background-color: #3b6675;
   text-indent: -2000px;
   overflow: hidden;
 }
-/* line 65, ../sass/_main-menu.scss */
+/* line 69, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .time {
   background: url(../images/clock.png) 8px 9px #2e5956 no-repeat;
   background-color: #3b6675;
   padding-left: 30px;
 }
-/* line 72, ../sass/_main-menu.scss */
+/* line 76, ../sass/_main-menu.scss */
 .main-menu-wrapper .top li {
   -webkit-border-radius: 0px 0px 4px 4px;
   -moz-border-radius: 0px 0px 4px 4px;
@@ -250,7 +254,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 0px 0px 4px 4px;
 }
 
-/* line 77, ../sass/_main-menu.scss */
+/* line 81, ../sass/_main-menu.scss */
 .lupa {
   background: url(../images/lupa.png) 7px 7px no-repeat #2e5956;
   background-color: #3b6675;
@@ -266,7 +270,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 3px;
 }
 
-/* line 88, ../sass/_main-menu.scss */
+/* line 92, ../sass/_main-menu.scss */
 .search-text {
   display: block;
   float: left;
@@ -281,25 +285,252 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0px 10px 0px 10px;
 }
 
-/* line 98, ../sass/_main-menu.scss */
+/* line 102, ../sass/_main-menu.scss */
 .search {
   position: absolute;
   right: 0px;
   top: 40px;
 }
 
-/* line 18, ../sass/style.scss */
+/*правое меню */
+/* line 3, ../sass/_right-side.scss */
+.right-side {
+  width: 200px;
+  float: left;
+  margin-left: 15px;
+}
+
+/* Детали футбольной встречи*/
+/* line 1, ../sass/_detail_football.scss */
+.name-sport {
+  background: #2e5956;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  -ms-border-radius: 4px 4px 0px 0px;
+  -o-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  display: inline-block;
+  padding: 10px 20px 5px 30px;
+  margin-top: 1px;
+  color: white;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.name-sport.football {
+  background: url(../images/football.png) no-repeat 10px 10px #2e5956;
+  background-color: #3b6675;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.detail-tab.active {
+  background: #3b6675;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  -ms-border-radius: 4px 4px 0px 0px;
+  -o-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  display: inline-block;
+  padding: 10px 10px 5px 10px;
+  margin-top: 1px;
+  color: white;
+  text-align: center;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.detail-head {
+  background: #3b6675;
+  padding: 10px 10px 10px 10px;
+  color: white;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.detail-tab {
+  background: grey;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  -ms-border-radius: 4px 4px 0px 0px;
+  -o-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  display: inline-block;
+  padding: 10px 10px 5px 10px;
+  margin-top: 1px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.refresh {
+  float: right;
+  background: url(../images/refresh.png) 95px 7px no-repeat;
+  height: 21px;
+  padding: 9px 30px 0px 0px;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.wrap-teams {
+  border: 1px solid #D6D9DE;
+}
+/* line 1, ../sass/_detail_football.scss */
+.wrap-teams .team2, .wrap-teams .team1 {
+  width: 35%;
+  float: left;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+}
+/* line 1, ../sass/_detail_football.scss */
+.wrap-teams .score {
+  width: 30%;
+  height: 143px;
+  float: left;
+  background: #F5F7F8;
+  color: #3b6675;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.football-sob td.splitter {
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.yellow {
+  background: #F8F1A3;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.box-5 {
+  padding: 10px;
+  border: 1px solid #D6D9DE;
+  margin: 10px 0px 10px 0px;
+  line-height: 1.4;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.green-text {
+  color: green;
+  font-weight: bold;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+table .team1 {
+  width: 230px;
+  text-align: left;
+  padding: 20px 0px 20px 0px;
+}
+/* line 1, ../sass/_detail_football.scss */
+table .team2 {
+  width: 230px;
+  text-align: right;
+}
+/* line 1, ../sass/_detail_football.scss */
+table .score {
+  width: 40px;
+  text-align: center;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.h1-score {
+  color: grey;
+  font-size: 45px;
+  text-align: center;
+  height: 70px;
+  padding-top: 15px;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.status {
+  background: #DAF2CB;
+  padding: 5px;
+  color: grey;
+  text-align: center;
+  height: 16px;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.minutes {
+  width: 5%;
+  text-align: center;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.who {
+  width: 40%;
+  text-align: center;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.nocells {
+  width: 45%;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.sobitie {
+  width: 10%;
+  background: #E6F2CB;
+  text-align: center;
+  height: 25px;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.football-sob td {
+  padding: 0px;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.red-card {
+  background: url(../images/football-status.png) 0px -40px;
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.red-yellow-card {
+  background: url(../images/football-status.png) 0px -80px;
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.yellow-card {
+  background: url(../images/football-status.png) 0px 0px;
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.yellowcard {
+  background: #faf4d6;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.redcart {
+  background: #ffeaea;
+}
+
+/* line 22, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 div {
   height: auto;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 body, html {
   margin: 0px;
   font: 12px tahoma;
@@ -307,7 +538,7 @@ body, html {
   width: 100%;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 header {
   background: url(../images/fon.jpg);
   height: 132px;
@@ -315,67 +546,60 @@ header {
   color: white;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 a {
   text-decoration: none;
   color: white;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 a:hover {
   color: orange;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .auto {
   margin: 0 auto;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .name {
   font-size: 24px;
   padding: 20px 0px 0px 20px;
   color: orange;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .slogan {
   margin-left: 20px;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .middle-wrap {
   width: 1000px;
 }
 
-/* line 81, ../sass/style.scss */
-.right-side {
-  width: 200px;
-  float: left;
-  margin-left: 15px;
-}
-
-/* line 87, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .content {
   width: 772px;
   float: left;
   margin-top: 22px;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .moduletable h3 {
   background: 170px 8px #2e5956 no-repeat;
   background-color: #3b6675;
@@ -392,192 +616,86 @@ ul {
   margin: 10px 0px 0px 0px;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 table .header {
   background: #2e5956;
   background-color: #3b6675;
   color: white;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 table .header td {
   border: 1px solid #3b6675;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 table td {
   padding: 10px;
   border: 1px solid #d2d0d0;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 table .add {
   width: 5px;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 table .clock {
   width: 25px;
   text-align: center;
 }
 
-/* line 131, ../sass/style.scss */
-table .team1 {
-  width: 230px;
-  text-align: left;
-}
-
-/* line 136, ../sass/style.scss */
-table .team2 {
-  width: 230px;
-  text-align: right;
-}
-
-/* line 141, ../sass/style.scss */
-table .score {
-  width: 40px;
-  text-align: center;
-}
-
-/* line 146, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 table .last-symbol {
   text-align: center;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .add a {
   color: #2e5956;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .add a:hover {
   color: orange;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 table .second td {
   background: #F8F8F8;
 }
 
-/* line 162, ../sass/style.scss */
-.name-sport {
-  background: #2e5956;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  -moz-border-radius: 4px 4px 0px 0px;
-  -ms-border-radius: 4px 4px 0px 0px;
-  -o-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px;
-  display: inline-block;
-  padding: 10px 20px 5px 30px;
-  margin-top: 1px;
-  color: white;
-}
-
-/* line 171, ../sass/style.scss */
-.name-sport.football {
-  background: url(../images/football.png) no-repeat 10px 10px #2e5956;
-  background-color: #3b6675;
-}
-
-/* line 176, ../sass/style.scss */
-.detail-tab.active {
-  background: #3b6675;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  -moz-border-radius: 4px 4px 0px 0px;
-  -ms-border-radius: 4px 4px 0px 0px;
-  -o-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px;
-  display: inline-block;
-  padding: 10px 10px 5px 10px;
-  margin-top: 1px;
-  color: white;
-  text-align: center;
-}
-
-/* line 186, ../sass/style.scss */
-.detail-head {
-  background: #3b6675;
-  padding: 10px 10px 10px 10px;
-  color: white;
-}
-
-/* line 192, ../sass/style.scss */
-.detail-tab {
-  background: grey;
-  -webkit-border-radius: 4px 4px 0px 0px;
-  -moz-border-radius: 4px 4px 0px 0px;
-  -ms-border-radius: 4px 4px 0px 0px;
-  -o-border-radius: 4px 4px 0px 0px;
-  border-radius: 4px 4px 0px 0px;
-  display: inline-block;
-  padding: 10px 10px 5px 10px;
-  margin-top: 1px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-}
-
-/* line 203, ../sass/style.scss */
-footer {
-  background: #3b6675;
-  border-top: 2px solid orange;
-  color: white;
-  height: 120px;
-  /*	margin-top:-130px;*/
-  padding-top: 10px;
-}
-
-/* line 212, ../sass/style.scss */
-.main {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-}
-
-/* line 218, ../sass/style.scss */
-.refresh {
-  float: right;
-  background: url(../images/refresh.png) 95px 7px no-repeat;
-  height: 21px;
-  padding: 9px 30px 0px 0px;
-}
-
-/* line 225, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .wrap-in-footer {
   width: 1000px;
 }
 
-/* line 229, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 footer .main-menu li {
   float: left;
   text-transform: lowercase;
   margin-right: 5px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 footer .main-menu li:after {
   content: " | ";
 }
 
-/* line 239, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 footer .main-menu {
   padding-bottom: 30px;
   margin: 0 auto;
   width: 790px;
 }
 
-/* line 245, ../sass/style.scss */
-.main-menu-wrapper li a {
-  font-weight: bold;
-}
-
-/* line 249, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .pattern {
   background: url(../images/pattern.jpg) 0px 2px;
   position: relative;
 }
 
-/* line 254, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .white-line {
   height: 2px;
   width: 735px;
@@ -585,28 +703,7 @@ footer .main-menu {
   position: absolute;
 }
 
-/* line 261, ../sass/style.scss */
-.wrap-teams .team1, .wrap-teams .team2 {
-  width: 35%;
-  float: left;
-  text-align: center;
-}
-
-/* line 267, ../sass/style.scss */
-.wrap-teams .score {
-  width: 30%;
-  height: 113px;
-  float: left;
-  background: #F5F7F8;
-  color: #3b6675;
-}
-
-/* line 275, ../sass/style.scss */
-.wrap-teams {
-  border: 1px solid #D6D9DE;
-}
-
-/* line 279, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .pattern-div {
   background: url(../images/pattern.jpg);
   height: 30px;
@@ -614,118 +711,36 @@ footer .main-menu {
   border-right: 1px solid #D6D9DE;
 }
 
-/* line 286, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .border-bottom {
   border-bottom: 1px solid #D6D9DE;
   padding: 10px 0px 10px 0px;
   text-align: center;
 }
 
-/* line 292, ../sass/style.scss */
-.h1-score {
-  color: grey;
-  font-size: 45px;
-  text-align: center;
-  height: 50px;
-}
-
-/* line 299, ../sass/style.scss */
-.status {
-  background: #DAF2CB;
-  padding: 5px;
-  color: grey;
-  text-align: center;
-  height: 16px;
-}
-
-/* line 307, ../sass/style.scss */
-.minutes {
-  width: 5%;
-  text-align: center;
-}
-
-/* line 312, ../sass/style.scss */
-.who {
-  width: 40%;
-  text-align: center;
-}
-
-/* line 317, ../sass/style.scss */
-.nocells {
-  width: 45%;
-}
-
-/* line 321, ../sass/style.scss */
-.sobitie {
-  width: 10%;
-  background: #E6F2CB;
-  text-align: center;
-  height: 25px;
-}
-
-/* line 328, ../sass/style.scss */
-.football-sob td {
-  padding: 0px;
-}
-
-/* line 332, ../sass/style.scss */
-.red-card {
-  background: url(../images/football-status.png) 0px -40px;
-  width: 40px;
-  height: 20px;
-  margin: 0 auto;
-  margin-top: -10px;
-}
-
-/* line 340, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .green {
   background: #DAF2CB;
 }
 
-/* line 344, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .grey {
   background: #F5F7F8;
 }
 
-/* line 348, ../sass/style.scss */
-.football-sob td.splitter {
-  padding: 5px;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* line 354, ../sass/style.scss */
-.yellow {
-  background: #F8F1A3;
-}
-
-/* line 358, ../sass/style.scss */
-.box-5 {
-  padding: 10px;
-  border: 1px solid #D6D9DE;
-  margin: 10px 0px 10px 0px;
-  line-height: 1.4;
-}
-
-/* line 365, ../sass/style.scss */
-.green-text {
-  color: green;
-  font-weight: bold;
-}
-
-/* line 370, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .margin-left-10 {
   margin-left: 10px;
 }
 
-/* line 374, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .opened .more {
   background: url(../images/arrow-down-opened.png) no-repeat;
   height: 10px;
   width: 12px;
 }
 
-/* line 380, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .more {
   background: url(../images/arrow-down.png) no-repeat;
   height: 12px;
@@ -736,7 +751,16 @@ footer .main-menu {
   cursor: pointer;
 }
 
-/* line 390, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .parent {
   position: relative;
+}
+
+/* line 223, ../sass/style.scss */
+footer {
+  background: #3b6675;
+  border-top: 2px solid orange;
+  color: white;
+  height: 120px;
+  padding-top: 10px;
 }

@@ -11,11 +11,15 @@ $normal-font:12px tahoma;
 $border-color:#D2D0D0;
 $light-green:#DEF8DE;
 $light-orange:#FAF8EE;
-
+$light-red:#FFEAEA;
+$light-yellow:#FAF4D6;
 @import "_left-side.scss";
 @import "_main-menu.scss";
+@import "_right-side.scss";
+@import "_detail_football.scss";
 
-* {
+* 
+{
 	margin: 0;
 	padding: 0;
 }
@@ -77,12 +81,6 @@ ul
 	width:1000px;
 }
 
-.right-side
-{
-	width:200px;
-	float:left;
-	margin-left:15px;
-}
 .content
 {
 	width:772px;
@@ -127,21 +125,6 @@ table .clock
 	width:25px;
 	text-align:center;
 }
-table .team1
-{
-	width:230px;
-	text-align:left;
-}
-table .team2
-{
-	width:230px;
-	text-align:right;
-}
-table .score
-{
-	width:40px;
-	text-align:center;
-}
 table .last-symbol
 {
 	text-align:center;
@@ -158,69 +141,7 @@ table .second td
 {
 	background:#F8F8F8;
 }
-.name-sport
-{
-	background:#2e5956;
-	@include border-radius(4px 4px 0px 0px);
-	display:inline-block;
-	padding:10px 20px 5px 30px;
-	margin-top:1px;
-	color:white;
-}
-.name-sport.football
-{
-	background: url(../images/football.png) no-repeat 10px 10px #2e5956;
-	background-color: $maincolor;
-}
-.detail-tab.active
-{
-	background:$maincolor;
-	@include border-radius(4px 4px 0px 0px);
-	display:inline-block;
-	padding:10px 10px 5px 10px;
-	margin-top:1px;
-	color:white;
-	text-align:center;
-}
-.detail-head
-{
-	background:$maincolor;
-	padding:10px 10px 10px 10px;
-	color:white;
-}
-.detail-tab
-{
-	background:grey;
-	@include border-radius(4px 4px 0px 0px);
-	display:inline-block;
-	padding:10px 10px 5px 10px;
-	margin-top:1px;
-	color:white;
-	text-align:center;
-	cursor:pointer;
-}
-footer
-{
-	background: $maincolor;
-	border-top:2px solid $second-color;
-	color: white;
-	height: 120px;
-/*	margin-top:-130px;*/
-	padding-top:10px;
-}
-.main
-{
-	min-height:100%;
-	height:auto !important;
-	height:100%;
-}
-.refresh
-{
-	float:right;
-	background: url(../images/refresh.png) 95px 7px no-repeat;
-	height:21px;
-	padding:9px 30px 0px 0px;
-}
+
 .wrap-in-footer
 {
 	width:1000px;
@@ -241,10 +162,6 @@ footer .main-menu
 	margin:0 auto;
 	width:790px;
 }
-.main-menu-wrapper li a
-{
-	font-weight:bold;
-}
 .pattern
 {
 	background:url(../images/pattern.jpg) 0px 2px;
@@ -256,24 +173,6 @@ footer .main-menu
 	width:735px;
 	background:white;
 	position:absolute;	
-}
-.wrap-teams .team1, .wrap-teams .team2
-{
-	width:35%;
-	float:left;
-	text-align:center;
-}
-.wrap-teams .score
-{
-	width:30%;
-	height:113px;
-	float:left;
-	background: #F5F7F8;
-	color: $maincolor;
-}
-.wrap-teams
-{
-	border:1px solid #D6D9DE;
 }
 .pattern-div
 {
@@ -288,54 +187,6 @@ footer .main-menu
 	padding:10px 0px 10px 0px;
 	text-align:center;
 }
-.h1-score
-{
-	color:grey;
-	font-size:45px;
-	text-align:center;
-	height:50px;
-}
-.status
-{
-	background: #DAF2CB;
-	padding:5px;
-	color:grey;
-	text-align:center;
-	height:16px;
-}
-.minutes
-{
-	width:5%;
-	text-align:center;
-}
-.who
-{
-	width:40%;
-	text-align:center;
-}
-.nocells
-{
-	width:45%;
-}
-.sobitie
-{
-	width:10%;
-	background:#E6F2CB;
-	text-align:center;
-	height:25px;
-}
-.football-sob td
-{
-	padding:0px;
-}
-.red-card
-{
-	background:url(../images/football-status.png) 0px -40px;
-	width:40px;
-	height:20px;
-	margin:0 auto;
-	margin-top:-10px;
-}
 .green
 {
 	background:#DAF2CB;
@@ -343,28 +194,6 @@ footer .main-menu
 .grey
 {
 	background:#F5F7F8;
-}
-.football-sob td.splitter
-{
-	padding:5px;
-	font-weight:bold;
-	text-align:center;
-}
-.yellow
-{
-	background: #F8F1A3;
-}
-.box-5
-{
-	padding:10px;
-	border:1px solid #D6D9DE;
-	margin:10px 0px 10px 0px;
-	line-height:1.4;
-}
-.green-text
-{
-	color:green;
-	font-weight:bold;
 }
 .margin-left-10
 {
@@ -389,4 +218,12 @@ footer .main-menu
 .parent
 {
 	position:relative;
+}
+footer
+{
+	background: $maincolor;
+	border-top:2px solid $second-color;
+	color: white;
+	height: 120px;
+	padding-top:10px;
 }
