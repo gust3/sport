@@ -1,0 +1,101 @@
+/*левое меню */
+.left-side
+{
+	width:200px;
+	float:left;
+	margin-right:15px;
+	padding:15px 0px 0px 13px;
+	ul 
+	{
+		a 
+		{
+			color:black;
+		}
+		li
+		{
+			padding:10px 0px 10px 0px;
+			display:block;
+			border:1px solid $border-color;
+			margin-top:-1px;
+			ul
+			{
+				display:none;
+				li span
+				{
+					padding-left:20px;
+				}
+			}
+		}
+		li span
+		{
+			display:block;
+			padding:0px 10px 0px 10px;
+		}
+		li:hover
+		{
+			background:$light-green;
+			border:1px solid $border-color;
+		}
+		li.opened{
+			padding-bottom:0px;
+			ul 
+			{
+				li
+				{
+					border-top:1px solid $border-color;
+					border-bottom:1px solid $border-color;
+					border-left:none;
+					border-right:none;
+					background:url(../images/arrow-down.png) 178px 12px no-repeat $light-orange;
+				}
+				li.last:hover
+				{
+					border-bottom:none;
+				}
+				li:hover
+				{
+					border:none;
+					border-top:1px solid $border-color;
+					border-bottom:1px solid $border-color;
+					background:url(../images/white-arrow.png) 178px 12px $light-green no-repeat;
+				}
+				li.second
+				{
+					background:url(../images/arrow-down.png) 178px 12px no-repeat white;
+				}
+				li.second:hover
+				{
+					background:url(../images/white-arrow.png) 178px 12px $light-green no-repeat;
+				}
+			}
+		}
+		li.opened:hover
+		{
+			background:none;
+			border:1px solid $border-color;
+		}
+		li.opened ul
+		{
+			margin-top:10px;
+			border:none;
+			display:block;
+		}
+		li.second
+		{
+			background:url(../images/arrow-down.png) #F8F8F8 178px 12px  no-repeat;
+		}
+		li.second:hover
+		{
+			background:url(../images/white-arrow.png) 178px 12px  no-repeat $light-green;
+			border:1px solid $border-color;
+		}
+		li.opened.second
+		{
+			background:url(../images/arrow-down-opened.png) 178px 12px  no-repeat #F8F8F8;
+		}
+		li.opened .last
+		{
+			border-bottom:none;
+		}
+	}
+}

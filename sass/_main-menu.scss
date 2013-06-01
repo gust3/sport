@@ -1,0 +1,102 @@
+.main-menu-wrapper li.item-108
+{
+	padding-left:26px;
+	padding-right:26px;
+}
+.main-menu-wrapper
+{
+	width:1000px;
+	position:relative;
+	height:132px;
+	li
+	{
+		float:left;
+		margin-left:10px;
+		background: $maincolor;
+		padding:10px 20px 10px 20px;
+		@include border-radius(4px 4px 0px 0px);
+		text-transform:uppercase;
+		ul
+		{
+			display:none;
+		}
+	}
+	li.active
+	{
+		border-left:2px solid $second-color;
+		border-right:2px solid $second-color;
+		border-top:2px solid $second-color;
+		background:white;
+		a
+		{
+			color:#2e5956;
+		}
+	}
+	ul
+	{
+		bottom:-2px;
+		position:absolute;
+	}
+	ul.top
+	{
+		top:0px;
+		right:0px;
+		li
+		{
+			text-transform:lowercase;
+		}
+		.vk
+		{
+			text-transform:uppercase;
+			padding:10px 15px 10px 15px;
+		}
+		.facebook
+		{
+			padding:10px 15px 10px 15px;
+		}
+		.twitter
+		{
+			background:url(../images/twitter.png)8px 7px #2e5956 no-repeat;			
+			background-color: $maincolor;			
+			text-indent:-2000px;
+			overflow:hidden;
+		}
+		.time
+		{
+			background:url(../images/clock.png)8px 9px #2e5956 no-repeat;
+			background-color: $maincolor;				
+			padding-left:30px;
+		}
+	}
+	.top li
+	{
+	@include border-radius(0px 0px 4px 4px);
+	}
+}
+.lupa
+{
+	background:url(../images/lupa.png) 7px 7px no-repeat #2e5956;
+	background-color: $maincolor;
+	width:28px;
+	height:28px;
+	display:inline-block;
+	@include border-radius(4px 4px 4px 4px);
+	cursor:pointer;
+	margin-top:3px;
+}
+.search-text
+{
+	display:block;
+	float:left;
+	margin:5px 10px 0px 0px;
+	border:none;
+	@include border-radius(4px 4px 4px 4px);
+	height:25px;
+	padding:0px 10px 0px 10px;
+}
+.search
+{
+	position:absolute;
+	right:0px;
+	top:40px;
+}

@@ -10,6 +10,10 @@ $second-color:orange;
 $normal-font:12px tahoma;
 $border-color:#D2D0D0;
 $light-green:#DEF8DE;
+$light-orange:#FAF8EE;
+
+@import "_left-side.scss";
+@import "_main-menu.scss";
 
 * {
 	margin: 0;
@@ -52,71 +56,11 @@ table
 {
 	margin:0 auto;
 }
-.main-menu-wrapper
-{
-	width:1000px;
-	position:relative;
-	height:132px;
-}
 ul
 {
 	margin:0px;
 	padding:0px;
 	list-style:none;
-}
-.main-menu-wrapper li
-{
-	float:left;
-	margin-left:10px;
-	/*
-	background:#2e5956;
-	*/
-	background: $maincolor;
-	padding:10px 20px 10px 20px;
-	@include border-radius(4px 4px 0px 0px);
-	text-transform:uppercase;
-}
-.main-menu-wrapper li ul
-{
-	display:none;
-}
-.main-menu-wrapper ul
-{
-	bottom:-2px;
-	position:absolute;
-}
-.main-menu-wrapper .top li
-{
-@include border-radius(0px 0px 4px 4px);
-}
-.main-menu-wrapper ul.top
-{
-	top:0px;
-	right:0px;
-}
-.main-menu-wrapper ul.top li
-{
-	text-transform:lowercase;
-}
-.main-menu-wrapper ul.top li.vk
-{
-	text-transform:uppercase;
-	padding:10px 15px 10px 15px;
-}
-.main-menu-wrapper ul.top li.facebook
-{
-	padding:10px 15px 10px 15px;
-}
-.main-menu-wrapper li.active
-{
-	border-left:2px solid $second-color;
-	border-right:2px solid $second-color;
-	border-top:2px solid $second-color;
-	background:white;
-}
-.main-menu-wrapper li.active a
-{
-color:#2e5956;
 }
 .name
 {
@@ -128,60 +72,11 @@ color:#2e5956;
 {
 	margin-left:20px;
 }
-.main-menu-wrapper li.twitter
-{
-	background:url(../images/twitter.png)8px 7px #2e5956 no-repeat;
-	
-	background-color: $maincolor;
-	
-	text-indent:-2000px;
-	overflow:hidden;
-}
-.main-menu-wrapper li.time
-{
-	background:url(../images/clock.png)8px 9px #2e5956 no-repeat;
-	background-color: $maincolor;
-		
-	padding-left:30px;
-}
-.lupa
-{
-	background:url(../images/lupa.png) 7px 7px no-repeat #2e5956;
-	background-color: $maincolor;
-	width:28px;
-	height:28px;
-	display:inline-block;
-	@include border-radius(4px 4px 4px 4px);
-	cursor:pointer;
-	margin-top:3px;
-}
-.search-text
-{
-	display:block;
-	float:left;
-	margin:5px 10px 0px 0px;
-	border:none;
-	@include border-radius(4px 4px 4px 4px);
-	height:25px;
-	padding:0px 10px 0px 10px;
-}
-.search
-{
-	position:absolute;
-	right:0px;
-	top:40px;
-}
 .middle-wrap
 {
 	width:1000px;
 }
-.left-side
-{
-	width:200px;
-	float:left;
-	margin-right:15px;
-	padding-left:13px;
-}
+
 .right-side
 {
 	width:200px;
@@ -190,9 +85,9 @@ color:#2e5956;
 }
 .content
 {
-	width:760px;
+	width:772px;
 	float:left;
-	margin-top:10px;
+	margin-top:22px;
 }
 .moduletable h3
 {
@@ -206,71 +101,7 @@ color:#2e5956;
 	font-weight:normal;
 	margin:10px 0px 0px 0px;
 }
-.left-side ul a
-{
-	color:black;
-}
-.left-side ul li
-{
-	padding:10px 0px 10px 0px;
-	display:block;
-	border:1px solid $border-color;
-	margin-top:-1px;
 
-}
-.left-side ul li:hover
-{
-	background:$light-green;
-	border:1px solid $border-color;
-}
-.left-side ul li.opened:hover
-{
-	background:none;
-	border:1px solid $border-color;
-}
-.left-side ul li.opened{
-	padding-bottom:0px;
-}
-.left-side ul li.opened ul
-{
-	margin-top:10px;
-	border:none;
-	display:block;
-}
-.left-side ul li ul
-{
-	display:none;
-}
-.left-side ul li span
-{
-	display:block;
-	padding:0px 10px 0px 10px;
-}
-.left-side ul li ul li span
-{
-	padding-left:20px;
-}
-.left-side ul li.opened ul li
-{
-	border-top:1px solid $border-color;
-	border-bottom:1px solid $border-color;
-	border-left:none;
-	border-right:none;
-}
-.left-side ul li.second:hover
-{
-	background:url(../images/white-arrow.png) 178px 12px  no-repeat $light-green;
-	border:1px solid $border-color;
-}
-.left-side ul li.second
-{
-	background:url(../images/arrow-down.png) #F8F8F8 178px 12px  no-repeat;
-}
-.left-side ul li.opened.second
-{
-	background:url(../images/arrow-down-opened.png) 178px 12px  no-repeat #F8F8F8;
-
-}
 table .header
 {
 	background:#2e5956;
@@ -370,8 +201,8 @@ table .second td
 }
 footer
 {
-	background: #2e5956;
-		background-color: $maincolor;
+	background: $maincolor;
+	border-top:2px solid $second-color;
 	color: white;
 	height: 120px;
 /*	margin-top:-130px;*/
@@ -425,10 +256,6 @@ footer .main-menu
 	width:735px;
 	background:white;
 	position:absolute;	
-}
-.left-side ul li.opened .last
-{
-	border-bottom:none;
 }
 .wrap-teams .team1, .wrap-teams .team2
 {
