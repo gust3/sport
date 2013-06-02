@@ -68,6 +68,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+@font-face {
+  font-family: "Droid";
+  src: url('/css/fonts/droidserif-regular.ttf') format('truetype'), url('/css/fonts/droidserif-regular.woff') format('woff'), url('/css/fonts/droidserif-regular.svg') format('svg'), url('/css/fonts/droidserif-regular.eot') format('embedded-opentype');
+}
+
 /*левое меню */
 /* line 3, ../sass/_left-side.scss */
 .left-side {
@@ -167,8 +172,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 2, ../sass/_main-menu.scss */
 .main-menu-wrapper li.item-108 {
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 30px;
+  padding-right: 32px;
 }
 
 /* line 7, ../sass/_main-menu.scss */
@@ -182,7 +187,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: left;
   margin-left: 10px;
   background: #3b6675;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 21px 10px 21px;
   -webkit-border-radius: 4px 4px 0px 0px;
   -moz-border-radius: 4px 4px 0px 0px;
   -ms-border-radius: 4px 4px 0px 0px;
@@ -197,55 +202,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 24, ../sass/_main-menu.scss */
 .main-menu-wrapper li a {
   font-weight: bold;
+  font: 11px "Droid";
 }
-/* line 29, ../sass/_main-menu.scss */
+/* line 30, ../sass/_main-menu.scss */
 .main-menu-wrapper li.active {
   border-left: 2px solid orange;
   border-right: 2px solid orange;
   border-top: 2px solid orange;
   background: white;
 }
-/* line 35, ../sass/_main-menu.scss */
+/* line 36, ../sass/_main-menu.scss */
 .main-menu-wrapper li.active a {
   color: #2e5956;
 }
-/* line 40, ../sass/_main-menu.scss */
+/* line 41, ../sass/_main-menu.scss */
 .main-menu-wrapper ul {
   bottom: -2px;
   position: absolute;
 }
-/* line 45, ../sass/_main-menu.scss */
+/* line 46, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top {
   top: 0px;
   right: 0px;
 }
-/* line 49, ../sass/_main-menu.scss */
+/* line 50, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top li {
   text-transform: lowercase;
 }
-/* line 53, ../sass/_main-menu.scss */
+/* line 54, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .vk {
   text-transform: uppercase;
   padding: 10px 15px 10px 15px;
 }
-/* line 58, ../sass/_main-menu.scss */
+/* line 59, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .facebook {
   padding: 10px 15px 10px 15px;
 }
-/* line 62, ../sass/_main-menu.scss */
+/* line 63, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .twitter {
   background: url(../images/twitter.png) 8px 7px #2e5956 no-repeat;
   background-color: #3b6675;
   text-indent: -2000px;
   overflow: hidden;
 }
-/* line 69, ../sass/_main-menu.scss */
+/* line 70, ../sass/_main-menu.scss */
 .main-menu-wrapper ul.top .time {
   background: url(../images/clock.png) 8px 9px #2e5956 no-repeat;
   background-color: #3b6675;
   padding-left: 30px;
 }
-/* line 76, ../sass/_main-menu.scss */
+/* line 77, ../sass/_main-menu.scss */
 .main-menu-wrapper .top li {
   -webkit-border-radius: 0px 0px 4px 4px;
   -moz-border-radius: 0px 0px 4px 4px;
@@ -254,7 +260,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 0px 0px 4px 4px;
 }
 
-/* line 81, ../sass/_main-menu.scss */
+/* line 82, ../sass/_main-menu.scss */
 .lupa {
   background: url(../images/lupa.png) 7px 7px no-repeat #2e5956;
   background-color: #3b6675;
@@ -270,7 +276,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 3px;
 }
 
-/* line 92, ../sass/_main-menu.scss */
+/* line 93, ../sass/_main-menu.scss */
 .search-text {
   display: block;
   float: left;
@@ -285,7 +291,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0px 10px 0px 10px;
 }
 
-/* line 102, ../sass/_main-menu.scss */
+/* line 103, ../sass/_main-menu.scss */
 .search {
   position: absolute;
   right: 0px;
@@ -297,7 +303,87 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .right-side {
   width: 200px;
   float: left;
-  margin-left: 15px;
+  margin: 10px 0px 0px 15px;
+}
+/* line 8, ../sass/_right-side.scss */
+.right-side .custom {
+  border-left: 1px solid #d2d0d0;
+  border-right: 1px solid #d2d0d0;
+  border-bottom: 1px solid #d2d0d0;
+}
+/* line 16, ../sass/_right-side.scss */
+.right-side ul li {
+  padding: 0px 10px 0px 25px;
+  background: url(../images/arrow-left.png) 10px 17px no-repeat;
+  border-top: 1px solid #d2d0d0;
+  border-bottom: 1px solid #d2d0d0;
+  margin-top: -1px;
+}
+/* line 23, ../sass/_right-side.scss */
+.right-side ul li .date {
+  color: #267d26;
+  font: 10px tahoma;
+}
+/* line 28, ../sass/_right-side.scss */
+.right-side ul li .teams {
+  color: black;
+}
+/* line 32, ../sass/_right-side.scss */
+.right-side ul li .score {
+  color: red;
+}
+/* line 37, ../sass/_right-side.scss */
+.right-side ul li.active {
+  background: url(../images/arrow-left-white.png) 10px 17px no-repeat #def8de;
+}
+/* line 41, ../sass/_right-side.scss */
+.right-side ul li:hover {
+  background: url(../images/arrow-left-white.png) 10px 17px no-repeat #def8de;
+}
+/* line 45, ../sass/_right-side.scss */
+.right-side ul li.second {
+  background: url(../images/arrow-left.png) 10px 17px no-repeat #f8f8f8;
+}
+/* line 49, ../sass/_right-side.scss */
+.right-side ul li.second:hover {
+  background: url(../images/arrow-left-white.png) 10px 17px no-repeat #def8de;
+}
+/* line 53, ../sass/_right-side.scss */
+.right-side ul li.last {
+  border-bottom: none;
+}
+/* line 60, ../sass/_right-side.scss */
+.right-side ul.league li {
+  padding: 5px;
+  background: none;
+  color: black;
+}
+/* line 66, ../sass/_right-side.scss */
+.right-side ul.league li.second {
+  background: #f8f8f8;
+}
+/* line 70, ../sass/_right-side.scss */
+.right-side ul.league li:hover {
+  background: #def8de;
+}
+/* line 75, ../sass/_right-side.scss */
+.right-side .more {
+  background: url(../images/pattern.jpg);
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+/* line 86, ../sass/_right-side.scss */
+.right-side .more-games {
+  display: none;
+}
+/* line 90, ../sass/_right-side.scss */
+.right-side .more-games.show {
+  display: block;
 }
 
 /* Детали футбольной встречи*/
@@ -357,6 +443,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   text-align: center;
   cursor: pointer;
+  font: 11px "Droid";
 }
 
 /* line 1, ../sass/_detail_football.scss */
@@ -424,7 +511,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 table .team1 {
   width: 230px;
   text-align: left;
-  padding: 20px 0px 20px 0px;
 }
 /* line 1, ../sass/_detail_football.scss */
 table .team2 {
@@ -519,18 +605,41 @@ table .score {
   background: #ffeaea;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 1, ../sass/_detail_football.scss */
+.who.green.goal {
+  background: url(../images/football-status.png) 0px -117px no-repeat #daf2cb;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.who.own-goal {
+  background: url(../images/football-status.png) 0px -157px no-repeat #ffeaea;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.who.penalty {
+  background: url(../images/football-status.png) 0px -197px no-repeat #daf2cb;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.zamena {
+  background: url(../images/football-status.png) 0px -278px;
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+/* line 31, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 div {
   height: auto;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 body, html {
   margin: 0px;
   font: 12px tahoma;
@@ -538,7 +647,7 @@ body, html {
   width: 100%;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 header {
   background: url(../images/fon.jpg);
   height: 132px;
@@ -546,60 +655,60 @@ header {
   color: white;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 a {
   text-decoration: none;
   color: white;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 a:hover {
   color: orange;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .auto {
   margin: 0 auto;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .name {
   font-size: 24px;
   padding: 20px 0px 0px 20px;
   color: orange;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .slogan {
   margin-left: 20px;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .middle-wrap {
   width: 1000px;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .content {
   width: 772px;
   float: left;
   margin-top: 22px;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .moduletable h3 {
   background: 170px 8px #2e5956 no-repeat;
   background-color: #3b6675;
@@ -610,92 +719,92 @@ ul {
   -o-border-radius: 4px 4px 0px 0px;
   border-radius: 4px 4px 0px 0px;
   text-transform: uppercase;
-  font-size: 12px;
+  font: 11px "Droid";
   color: white;
   font-weight: normal;
   margin: 10px 0px 0px 0px;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 table .header {
   background: #2e5956;
   background-color: #3b6675;
   color: white;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 table .header td {
   border: 1px solid #3b6675;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 table td {
   padding: 10px;
   border: 1px solid #d2d0d0;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 table .add {
   width: 5px;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 table .clock {
   width: 25px;
   text-align: center;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 table .last-symbol {
   text-align: center;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .add a {
   color: #2e5956;
 }
 
-/* line 137, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .add a:hover {
   color: orange;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 table .second td {
   background: #F8F8F8;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .wrap-in-footer {
   width: 1000px;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 footer .main-menu li {
   float: left;
   text-transform: lowercase;
   margin-right: 5px;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 footer .main-menu li:after {
   content: " | ";
 }
 
-/* line 160, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 footer .main-menu {
   padding-bottom: 30px;
   margin: 0 auto;
   width: 790px;
 }
 
-/* line 166, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .pattern {
   background: url(../images/pattern.jpg) 0px 2px;
   position: relative;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .white-line {
   height: 2px;
   width: 735px;
@@ -703,7 +812,7 @@ footer .main-menu {
   position: absolute;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .pattern-div {
   background: url(../images/pattern.jpg);
   height: 30px;
@@ -711,36 +820,36 @@ footer .main-menu {
   border-right: 1px solid #D6D9DE;
 }
 
-/* line 185, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .border-bottom {
   border-bottom: 1px solid #D6D9DE;
   padding: 10px 0px 10px 0px;
   text-align: center;
 }
 
-/* line 191, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .green {
-  background: #DAF2CB;
+  background: #daf2cb;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .grey {
   background: #F5F7F8;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .margin-left-10 {
   margin-left: 10px;
 }
 
-/* line 203, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .opened .more {
   background: url(../images/arrow-down-opened.png) no-repeat;
   height: 10px;
   width: 12px;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .more {
   background: url(../images/arrow-down.png) no-repeat;
   height: 12px;
@@ -751,12 +860,12 @@ footer .main-menu {
   cursor: pointer;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .parent {
   position: relative;
 }
 
-/* line 223, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 footer {
   background: #3b6675;
   border-top: 2px solid orange;

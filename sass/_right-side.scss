@@ -3,5 +3,91 @@
 {
 	width:200px;
 	float:left;
-	margin-left:15px;
+	margin:10px 0px 0px 15px;
+	.custom
+	{
+		border-left:1px solid $border-color;
+		border-right:1px solid $border-color;
+		border-bottom:1px solid $border-color;
+	}
+	ul
+	{
+		li
+		{
+			padding:0px 10px 0px 25px;
+			background:url(../images/arrow-left.png) 10px 17px no-repeat;
+			border-top:1px solid $border-color;
+			border-bottom:1px solid $border-color;
+			margin-top:-1px;
+			.date
+			{
+				color:$dark-green;
+				font:$small-font;
+			}
+			.teams
+			{
+				color:black;
+			}
+			.score
+			{
+				color:red;
+			}
+		}
+		li.active
+		{
+			background:url(../images/arrow-left-white.png) 10px 17px no-repeat $light-green;
+		}
+		li:hover
+		{
+			background:url(../images/arrow-left-white.png) 10px 17px no-repeat $light-green;
+		}
+		li.second
+		{
+			background:url(../images/arrow-left.png) 10px 17px no-repeat $light-grey;
+		}
+		li.second:hover
+		{
+			background:url(../images/arrow-left-white.png) 10px 17px no-repeat $light-green;
+		}
+		li.last
+		{
+			border-bottom:none;
+		}
+	}
+	ul.league
+	{
+		li
+		{
+			padding:5px;
+			background:none;
+			color:$font-color;
+		}
+		li.second
+		{
+			background:$light-grey;
+		}
+		li:hover
+		{
+			background:$light-green;
+		}
+	}
+	.more
+	{
+		background: url(../images/pattern.jpg);
+		position:relative;
+		width:auto;
+		height:auto;
+		top:0px;
+		right:0px;
+		text-align:center;
+		padding:5px 0px 5px 0px;
+	}
+	.more-games
+	{
+		display:none;
+	}
+	.more-games.show
+	{
+		display:block;
+	}
 }

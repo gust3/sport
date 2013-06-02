@@ -82,7 +82,7 @@
 		}
 		li.second
 		{
-			background:url(../images/arrow-down.png) #F8F8F8 178px 12px  no-repeat;
+			background:url(../images/arrow-down.png) $light-grey 178px 12px  no-repeat;
 		}
 		li.second:hover
 		{
@@ -91,7 +91,7 @@
 		}
 		li.opened.second
 		{
-			background:url(../images/arrow-down-opened.png) 178px 12px  no-repeat #F8F8F8;
+			background:url(../images/arrow-down-opened.png) 178px 12px  no-repeat $light-grey;
 		}
 		li.opened .last
 		{

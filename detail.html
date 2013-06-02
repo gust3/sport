@@ -15,6 +15,9 @@
 			event.preventDefault();
 			$(this).parent().toggleClass('opened');
 		});
+		$('.more').click(function(){
+			$('.more-games').toggleClass('show');
+		})
 	});
 </script>
 </head>
@@ -52,7 +55,7 @@
         <div class="detail-head">International - Friendlies</div>
         <div class="wrap-teams">
           <div class="team1">
-            <img src="/images/canada.png">
+            <img src="images/canada.png">
             <br>
             Canada 
           </div>
@@ -62,7 +65,7 @@
             <div class="status">finished</div>
           </div>
           <div class="team2">
-            <img src="/images/costa.png">
+            <img src="images/costa.png">
             <br>
             Costa - Rica
           </div>
@@ -88,8 +91,8 @@
               <td class="minutes redcart">74'</td>
             </tr>
             <tr>
-              <td class="minutes grey">74'</td>
-              <td class="who grey">Nicolas Ledgerwood</td>
+              <td class="minutes yellowcard">74'</td>
+              <td class="who yellowcard">Nicolas Ledgerwood</td>
               <td class="sobitie">
                 <div class="yellow-card"> </div>
               </td>
@@ -101,8 +104,26 @@
             <tr>
               <td class="nocells" colspan="2"> </td>
               <td class="sobitie">0 - 1</td>
-              <td class="who green">Jairo Arrieta</td>
+              <td class="who green goal" title="гол">Jairo Arrieta</td>
               <td class="minutes green">15'</td>
+            </tr>
+			<tr>
+              <td class="nocells" colspan="2"> </td>
+              <td class="sobitie">0 - 1</td>
+              <td class="who own-goal" title="авто гол">Jairo Arrieta</td>
+              <td class="minutes redcart">15'</td>
+            </tr>
+			<tr>
+              <td class="nocells" colspan="2"> </td>
+              <td class="sobitie">0 - 1</td>
+              <td class="who penalty green" title="пенальти">Jairo Arrieta</td>
+              <td class="minutes green">15'</td>
+            </tr>
+			<tr>
+              <td class="nocells" colspan="2"> </td>
+              <td class="sobitie"><div class="zamena"></div></td>
+              <td class="who grey" title="замена">Jairo Arrieta(Jairo Arrieta)</td>
+              <td class="minutes grey">15'</td>
             </tr>
           </tbody>
         </table>
@@ -158,42 +179,77 @@
   </div>
   <div class="right-side">
     <div class="moduletable">
-      <h3>Популярные (2)</h3>
+      <h3>Head to head</h3>
       <div class="custom">
         <ul>
-          <li class="parent opened">
-            <a href="http://rezultaty.net/">
-              <span>Manchester City - Chelsea</span>
-            </a>
-            <ul>
-              <li>
-                <span>1st ggggg</span>
-              </li>
-              <li>
-                <span>1st ggggg</span>
-              </li>
-              <li class="last">
-                <span>1st ggggg</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li class="second">
-            <span>Manchester City - Chelsea</span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <span>Manchester City - Chelsea</span>
-          </li>
-        </ul>
-        <ul>
-          <li class="second">
-            <span>Manchester City - Chelsea</span>
-          </li>
-        </ul>
-        <p> </p>
+			<a href=""><li class="active">
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+			<a href=""><li class="second">
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+			<a href=""><li>
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+			<a href=""><li class="second">
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+		</ul>
+		<ul class="more-games">
+			<a href=""><li>
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+			<a href=""><li class="second">
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+			<a href=""><li>
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+			<a href=""><li class="second">
+				<div class="date">01.06.2013 17:00</div>
+				<div class="teams">Canada / Costa - Rica</div>
+				<div class="score">счет: 4 - 0</div>
+			</li></a>
+		</ul>
+		<div class="more">
+			Больше игр
+		</div>
+      </div>
+    </div>
+	    <div class="moduletable">
+      <h3>League standings</h3>
+      <div class="custom">
+        <ul class="league">
+			<a href=""><li class="">
+				1. Canada (65)
+			</li></a>
+			<a href=""><li class="second">
+				2. Canada (65)
+			</li></a>
+			<a href=""><li class="">
+				3. Canada (65)
+			</li></a>
+			<a href=""><li class="second">
+				4. Canada (65)
+			</li></a>
+			<a href=""><li class="">
+				5. Canada (65)
+			</li></a>
+		</ul>
       </div>
     </div>
   </div>

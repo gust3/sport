@@ -2,17 +2,26 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+@import "compass/css3";
 @import "compass/reset";
 @import "compass/css3/border-radius";
+@include font-face("Droid", font-files("droidserif-regular.ttf", "droidserif-regular.woff", "droidserif-regular.svg", "droidserif-regular.eot"));
+
+
 $maincolor:#3B6675;
 $second-color:orange;
 $normal-font:12px tahoma;
+$small-font:10px tahoma;
+$second-font:11px "Droid";
 $border-color:#D2D0D0;
 $light-green:#DEF8DE;
+$dark-green:#267D26;
 $light-orange:#FAF8EE;
 $light-red:#FFEAEA;
 $light-yellow:#FAF4D6;
+$light-grass-green:#DAF2CB;
+$light-grey:#F8F8F8;
+$font-color:black;
 @import "_left-side.scss";
 @import "_main-menu.scss";
 @import "_right-side.scss";
@@ -94,7 +103,7 @@ ul
 	padding:10px 20px 10px 20px;
 	@include border-radius(4px 4px 0px 0px);
 	text-transform:uppercase;
-	font-size:12px;
+	font:$second-font;
 	color:white;
 	font-weight:normal;
 	margin:10px 0px 0px 0px;
@@ -189,7 +198,7 @@ footer .main-menu
 }
 .green
 {
-	background:#DAF2CB;
+	background:$light-grass-green;
 }
 .grey
 {

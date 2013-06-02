@@ -1,7 +1,7 @@
 .main-menu-wrapper li.item-108
 {
-	padding-left:26px;
-	padding-right:26px;
+	padding-left:30px;
+	padding-right:32px;
 }
 .main-menu-wrapper
 {
@@ -13,7 +13,7 @@
 		float:left;
 		margin-left:10px;
 		background: $maincolor;
-		padding:10px 20px 10px 20px;
+		padding:10px 21px 10px 21px;
 		@include border-radius(4px 4px 0px 0px);
 		text-transform:uppercase;
 		ul
@@ -23,6 +23,7 @@
 		a
 		{
 			font-weight:bold;
+			font: $second-font;
 		}
 	}
 	li.active
