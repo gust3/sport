@@ -15,6 +15,19 @@
       	$('.more').click(function(){
       		$('.more-games').toggleClass('show');
       	})
+        $('.tabs').hide();
+        $('.detail-tab').each(function(){       
+            if ($(this).hasClass('active')) 
+            {
+                $($(this).attr('tab')).show();
+            }
+        });
+        $('.detail-tab').click(function(){
+            $('.tabs').hide();
+            $('.detail-tab').removeClass('active');
+            $($(this).attr('tab')).show();
+            $(this).addClass('active');
+        });
       });
   %body
     .main
@@ -70,11 +83,11 @@
           .item-page
             .pattern
               .white-line  
-              .detail-tab.active ПОДРОБНЕЕ
-              .detail-tab Последние матчи Канады
-              .detail-tab Последние матчи Коста рики
+              .detail-tab.active{:tab => '#tab-1'} ПОДРОБНЕЕ
+              .detail-tab{:tab => '#tab-2'} Последние матчи Канады
+              .detail-tab{:tab => '#tab-3'} Последние матчи Коста рики
               .refresh auto refresh 10s
-            #tab-1.tab
+            #tab-1.tabs
               .detail-head International - Friendlies
               .wrap-teams
                 .team1
@@ -176,6 +189,68 @@
                   %li TIME: 00:05 UTC
                   %li VENUE: Commonwealth Stadium
                   %li STREET: N/A
+            %div#tab-2.tabs
+              .detail-head Japan - J. League
+              %table{:cellpadding => "0", :cellspacing => "0"}
+                %tbody
+                  %tr
+                    %td.add
+                      %a{:href => "http://rezultaty.net/"} +
+                    %td.clock 12:00
+                    %td  
+                    %td.team1 Cerezo Osako
+                    %td.score 0 - 0
+                    %td.team2 Nagoya Grampus Eight
+                    %td.last-symbol -
+                  %tr.second
+                    %td.add
+                      %a{:href => "http://rezultaty.net/"} +
+                    %td.clock 12:00
+                    %td  
+                    %td.team1 Cerezo Osako
+                    %td.score 0 - 0
+                    %td.team2 Nagoya Grampus Eight
+                    %td.last-symbol -
+                  %tr
+                    %td.add
+                      %a{:href => "http://rezultaty.net/"} +
+                    %td.clock 12:00
+                    %td  
+                    %td.team1 Cerezo Osako
+                    %td.score 0 - 0
+                    %td.team2 Nagoya Grampus Eight
+                    %td.last-symbol -
+            %div#tab-3.tabs
+              .detail-head Japan - J. League
+              %table{:cellpadding => "0", :cellspacing => "0"}
+                %tbody
+                  %tr
+                    %td.add
+                      %a{:href => "http://rezultaty.net/"} +
+                    %td.clock 12:00
+                    %td  
+                    %td.team1 Cerezo Osako
+                    %td.score 0 - 0
+                    %td.team2 Nagoya Grampus Eight
+                    %td.last-symbol -
+                  %tr.second
+                    %td.add
+                      %a{:href => "http://rezultaty.net/"} +
+                    %td.clock 12:00
+                    %td  
+                    %td.team1 Cerezo Osako
+                    %td.score 0 - 0
+                    %td.team2 Nagoya Grampus Eight
+                    %td.last-symbol -
+                  %tr
+                    %td.add
+                      %a{:href => "http://rezultaty.net/"} +
+                    %td.clock 12:00
+                    %td  
+                    %td.team1 Cerezo Osako
+                    %td.score 0 - 0
+                    %td.team2 Nagoya Grampus Eight
+                    %td.last-symbol -    
         .right-side
           .moduletable
             %h3 Head to head

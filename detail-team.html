@@ -16,6 +16,19 @@
       	$('.more').click(function(){
       		$('.more-games').toggleClass('show');
       	})
+        $('.tabs').hide();
+        $('.detail-tab').each(function(){       
+            if ($(this).hasClass('active')) 
+            {
+                $($(this).attr('tab')).show();
+            }
+        $('.detail-tab').click(function(){
+            $('.tabs').hide();
+            $('.detail-tab').removeClass('active');
+            $($(this).attr('tab')).show();
+            $(this).addClass('active');
+        })
+        });        
       });
     </script>
   </head>
@@ -117,12 +130,52 @@
             <div class='btn-group pull-right'>
               <div class='pattern'>
                 <div class='white-line'> </div>
-                <div class='detail-tab active'>Прошедшие матчи</div>
-                <div class='detail-tab'>Будущие матчи</div>
+                <div class='detail-tab active' tab='#tab-1'>Прошедшие матчи</div>
+                <div class='detail-tab' tab='#tab-2'>Будущие матчи</div>
                 <div class='refresh'>auto refresh 10s</div>
               </div>
-              <div>
+              <div class='tabs' id='tab-1'>
                 <div class='detail-head'>Japan - J. League</div>
+                <table cellpadding='0' cellspacing='0'>
+                  <tbody>
+                    <tr>
+                      <td class='add'>
+                        <a href='http://rezultaty.net/'>+</a>
+                      </td>
+                      <td class='clock'>12:00</td>
+                      <td> </td>
+                      <td class='team1'>Cerezo Osako</td>
+                      <td class='score'>0 - 0</td>
+                      <td class='team2'>Nagoya Grampus Eight</td>
+                      <td class='last-symbol'>-</td>
+                    </tr>
+                    <tr class='second'>
+                      <td class='add'>
+                        <a href='http://rezultaty.net/'>+</a>
+                      </td>
+                      <td class='clock'>12:00</td>
+                      <td> </td>
+                      <td class='team1'>Cerezo Osako</td>
+                      <td class='score'>0 - 0</td>
+                      <td class='team2'>Nagoya Grampus Eight</td>
+                      <td class='last-symbol'>-</td>
+                    </tr>
+                    <tr>
+                      <td class='add'>
+                        <a href='http://rezultaty.net/'>+</a>
+                      </td>
+                      <td class='clock'>12:00</td>
+                      <td> </td>
+                      <td class='team1'>Cerezo Osako</td>
+                      <td class='score'>0 - 0</td>
+                      <td class='team2'>Nagoya Grampus Eight</td>
+                      <td class='last-symbol'>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class='tabs' id='tab-2'>
+                <div class='detail-head'>China - J. League</div>
                 <table cellpadding='0' cellspacing='0'>
                   <tbody>
                     <tr>
