@@ -1,0 +1,164 @@
+!!! 1.1
+%html{:lang => "ru", "xml:lang" => "ru", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title Ôóòáîë
+    %link{:href => "css/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    /[if IE]
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js", :type => "text/javascript"}
+    :javascript
+      jQuery(function($){
+      	$('.left-side ul li.parent .more').click(function(event){
+      		event.preventDefault();
+      		$(this).parent().toggleClass('opened');
+      	});
+      });
+  %body
+    .main
+      %header
+        .main-menu-wrapper.auto
+          %a{:href => "/"}
+            .name Rezultaty.net
+          .slogan All in one
+          %ul.top
+            %a{:href => "/"}
+              %li.twitter twitter
+            %a{:href => "/"}
+              %li.facebook f
+            %a{:href => "/"}
+              %li.vk B
+            %a{:href => "/"}
+              %li ìîè èãðû [0]
+            %a{:href => "/"}
+              %li.time 17:55
+            %a{:href => "/"}
+              %li Âîéòè
+          .search
+            %input.search-text{:type => "text"}/
+            .lupa
+          %ul.nav.menu
+            %li.item-101.current.active
+              %a.soccer{:href => "/"} Ôóòáîë
+            %li.item-102
+              %a.tennis{:href => "/index.php/tennis"} Òåííèñ
+            %li.item-103
+              %a.basketball{:href => "/index.php?Itemid=103"} Áàñêåòáîë
+            %li.item-104
+              %a.hockey{:href => "/index.php?Itemid=104"} Õîêêåé
+            %li.item-105
+              %a.baseball{:href => "/index.php?Itemid=105"} Áåéñáîë
+            %li.item-106
+              %a.american-football{:href => "/index.php?Itemid=106"} Àì. Ôóòáîë
+            %li.item-107
+              %a.handball{:href => "/index.php?Itemid=107"} Ãàíäáîë
+            %li.item-128
+              %a{:href => "/index.php?Itemid=128"} Âîëåéáîë
+            %li.item-108.deeper.parent
+              %a.other{:href => "/index.php?Itemid=108"} Äðóãèå
+              %ul.nav-child.unstyled.small
+                %li.item-109
+                  %a.volleyball{:href => "/index.php?Itemid=109"} Âîëåéáîë
+                %li.item-110
+                  %a.rugby-union{:href => "/index.php?Itemid=110"} Ðåãáè-þíèîí
+                %li.item-111
+                  %a.cricket{:href => "/index.php?Itemid=111"} Êðèêåò
+      .middle-wrap.auto
+        .left-side
+          .moduletable
+            %h3 Ïîïóëÿðíûå
+            .custom
+              %ul
+                %li.parent.opened
+                  %span Manchester City - Chelsea
+                  .more
+                  %ul
+                    %a{:href => ""}
+                      %li
+                        %span 1st ggggg
+                    %a{:href => ""}
+                      %li.second
+                        %span 1st ggggg
+                    %a{:href => ""}
+                      %li.last
+                        %span 1st ggggg
+                %li.second
+                  %span Manchester City - Chelsea
+                %li
+                  %span Manchester City - Chelsea
+                %li.second
+                  %span Manchester City - Chelsea
+      .content
+        #system-message-container
+          #system-message
+        .item-page
+          .btn-group.pull-right
+          .pattern
+            .white-line  
+            .name-sport.football ÔÓÒÁÎË
+            .refresh auto refresh 10s
+          %table{:cellpadding => "0", :cellspacing => "0"}
+            %tbody
+              %tr.header
+                %td{:colspan => "7"} Japan - J. League
+              %tr
+                %td.add
+                  %a{:href => "http://rezultaty.net/"} +
+                %td.clock 12:00
+                %td  
+                %td.team1 Cerezo Osako
+                %td.score 0 - 0
+                %td.team2 Nagoya Grampus Eight
+                %td.last-symbol -
+              %tr.second
+                %td.add
+                  %a{:href => "http://rezultaty.net/"} +
+                %td.clock 12:00
+                %td  
+                %td.team1 Cerezo Osako
+                %td.score 0 - 0
+                %td.team2 Nagoya Grampus Eight
+                %td.last-symbol -
+              %tr
+                %td.add
+                  %a{:href => "http://rezultaty.net/"} +
+                %td.clock 12:00
+                %td  
+                %td.team1 Cerezo Osako
+                %td.score 0 - 0
+                %td.team2 Nagoya Grampus Eight
+                %td.last-symbol -
+      %div{:style => "clear:both;"}
+    %footer
+      .wrap-in-footer.auto
+        %ul.nav.menu2.main-menu
+          %li.item-112.active
+            %a.first{:href => "/"} Ôóòáîë
+          %li.item-113
+            %a{:href => "/index.php/tennis"} ÒÅÍÍÈÑ
+          %li.item-114
+            %a{:href => "/index.php?Itemid=112"} ÁÀÑÊÅÒÁÎË
+          %li.item-115
+            %a{:href => "/index.php?Itemid=112"} ÕÎÊÊÅÉ
+          %li.item-116
+            %a{:href => "/index.php?Itemid=112"} ÁÅÉÑÁÎË
+          %li.item-117
+            %a{:href => "/index.php?Itemid=112"} ÀÌÅÐÈÊÀÍÑÊÈÉ ÔÓÒÁÎË
+          %li.item-118
+            %a{:href => "/index.php?Itemid=112"} ÃÀÍÄÁÎË
+          %li.item-119
+            %a{:href => "/index.php?Itemid=112"} ÂÎËÅÉÁÎË
+          %li.item-120
+            %a{:href => "/index.php?Itemid=110"} ÐÅÃÁÈ-ÞÍÈÎÍ
+          %li.item-121
+            %a{:href => "/index.php?Itemid=111"} ÊÐÈÊÅÒ
+          %li.item-122
+            %a{:href => "/index.php?Itemid=122"} LIVESCORE
+        %div{:style => "clear:both;"}
+        %div
+          Our football livescore have live coverage from 559 worldwide soccer leagues, cups and tournaments with live updated
+          results, statistics, league tables and fixtures. Matches from all leagues have fast and accurate updates for minutes and scores, scorer
+          and assist, cards, substitutions, match statistics and many more. Live commentaries are available only for most popular football leagues:
+          England Barclay's EPL Premier League and FA Cup, Spain BBVA league, Copa del Rey and live Barcelona Real Madrid El Clasico match,
+          Italy Serie A and Coppa Italia, German Bundesliga and DFB pokal, France Ligue 1, Denmark Superligaen, Turkey Turkcell Super Lig and
+          UEFA Champions League. You can filter live, finished or scheduled matches, and in live "Bet365 odds" tab you can find dropping / rising odds
+          which could help you to predict match winner.

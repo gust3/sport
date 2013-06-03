@@ -1,0 +1,280 @@
+!!! 1.1
+%html{:lang => "ru", "xml:lang" => "ru", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title Ôóòáîë
+    %link{:href => "css/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    /[if IE]
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js", :type => "text/javascript"}
+    :javascript
+      jQuery(function($){
+      	$('.left-side ul li.parent .more').click(function(event){
+      		event.preventDefault();
+      		$(this).parent().toggleClass('opened');
+      	});
+      	$('.more').click(function(){
+      		$('.more-games').toggleClass('show');
+      	})
+      });
+  %body
+    .main
+      %header
+        .main-menu-wrapper.auto
+          %a{:href => "/"}
+            .name Rezultaty.net
+          .slogan All in one
+          %ul.top
+            %a{:href => "/"}
+              %li.twitter twitter
+            %a{:href => "/"}
+              %li.facebook f
+            %a{:href => "/"}
+              %li.vk B
+            %a{:href => "/"}
+              %li ìîè èãðû [0]
+            %a{:href => "/"}
+              %li.time 17:55
+            %a{:href => "/"}
+              %li Âîéòè
+          .search
+            %input.search-text{:type => "text"}/
+            .lupa
+          %ul.nav.menu
+            %li.item-101.current.active
+              %a.soccer{:href => "/"} Ôóòáîë
+            %li.item-102
+              %a.tennis{:href => "/index.php/tennis"} Òåííèñ
+            %li.item-103
+              %a.basketball{:href => "/index.php?Itemid=103"} Áàñêåòáîë
+            %li.item-104
+              %a.hockey{:href => "/index.php?Itemid=104"} Õîêêåé
+            %li.item-105
+              %a.baseball{:href => "/index.php?Itemid=105"} Áåéñáîë
+            %li.item-106
+              %a.american-football{:href => "/index.php?Itemid=106"} Àì. Ôóòáîë
+            %li.item-107
+              %a.handball{:href => "/index.php?Itemid=107"} Ãàíäáîë
+            %li.item-128
+              %a{:href => "/index.php?Itemid=128"} Âîëåéáîë
+            %li.item-108.deeper.parent
+              %a.other{:href => "/index.php?Itemid=108"} Äðóãèå
+              %ul.nav-child.unstyled.small
+                %li.item-109
+                  %a.volleyball{:href => "/index.php?Itemid=109"} Âîëåéáîë
+                %li.item-110
+                  %a.rugby-union{:href => "/index.php?Itemid=110"} Ðåãáè-þíèîí
+                %li.item-111
+                  %a.cricket{:href => "/index.php?Itemid=111"} Êðèêåò
+      .middle-wrap.auto
+        .content.margin-left-10
+          .item-page
+            .pattern
+              .white-line  
+              .detail-tab.active ÏÎÄÐÎÁÍÅÅ
+              .detail-tab Ïîñëåäíèå ìàò÷è Êàíàäû
+              .detail-tab Ïîñëåäíèå ìàò÷è Êîñòà ðèêè
+              .refresh auto refresh 10s
+            #tab-1.tab
+              .detail-head International - Friendlies
+              .wrap-teams
+                .team1
+                  %img{:src => "images/canada.png"}/
+                  %br/
+                  Canada 
+                .score
+                  .border-bottom 29.05.2013. 04:05
+                  .h1-score 0-1
+                  .status finished
+                .team2
+                  %img{:src => "images/costa.png"}/
+                  %br/
+                  Costa - Rica
+                %div{:style => "clear: both; height: 0px;"}  
+              .pattern-div  
+              %table.football-sob
+                %tbody
+                  %tr
+                    %td.nocells{:colspan => "2"}  
+                    %td.sobitie
+                      .red-card  
+                    %td.who.redcart Christopher Meneses
+                    %td.minutes.redcart 74'
+                  %tr
+                    %td.nocells{:colspan => "2"}  
+                    %td.sobitie
+                      .red-yellow-card  
+                    %td.who.redcart Christopher Meneses
+                    %td.minutes.redcart 74'
+                  %tr
+                    %td.minutes.yellowcard 74'
+                    %td.who.yellowcard Nicolas Ledgerwood
+                    %td.sobitie
+                      .yellow-card  
+                    %td.nocells{:colspan => "2"}  
+                  %tr
+                    %td.grey.splitter{:colspan => "5"} HT (0 - 1)
+                  %tr
+                    %td.nocells{:colspan => "2"}  
+                    %td.sobitie 0 - 1
+                    %td.who.green.goal{:title => "ãîë"} Jairo Arrieta
+                    %td.minutes.green 15'
+                  %tr
+                    %td.nocells{:colspan => "2"}  
+                    %td.sobitie 0 - 1
+                    %td.who.own-goal{:title => "àâòî ãîë"} Jairo Arrieta
+                    %td.minutes.redcart 15'
+                  %tr
+                    %td.nocells{:colspan => "2"}  
+                    %td.sobitie 0 - 1
+                    %td.who.penalty.green{:title => "ïåíàëüòè"} Jairo Arrieta
+                    %td.minutes.green 15'
+                  %tr
+                    %td.nocells{:colspan => "2"}  
+                    %td.sobitie
+                      .zamena
+                    %td.who.grey{:title => "çàìåíà"} Jairo Arrieta(Jairo Arrieta)
+                    %td.minutes.grey 15'
+              .yellow.box-5 * IMPORTANT NOTICE – Sofascore.com in partnership with bet365 offer over 40,000 live streamed events per year. However, please note that the intellectual property rights to stream such events are usually owned at a country level and therefore, depending on your location, there may be certain events that you may be unable to view due to such restrictions. Prior to joining bet365 and funding your account therefore in order to view any particular event via the bet365 live stream, you are strongly advised to first check with bet365 that, given your country location, you would be eligible to view the live streamed event in question. bet365’s contact details can be found by clicking here, then clicking ‘Services’ at the top right of the page, and then choosing the ‘Contact Us’ option.
+              .grey.box-5
+                Canada v Costa Rica live score starts on 29.05.2013 at 02:05 UTC time at Commonwealth Stadium stadium in Friendlies, International. Here on SofaScore livescore you can find all Canada vs Costa Rica previous results sorted by their H2H matches. Last Canada vs Costa Rica match has been played on 29.05.2013 in Friendlies and the final result was Canada 0:1 Costa Rica.
+                %br/
+                %br/
+                You can watch Canada vs Costa Rica live stream online if you are registered member of Bet365, leading online betting company that have coverage for more than 40.000 live sports events with live betting during the year. There you can also find video highlights and news from the most popular soccer leagues in the world. Live Bet365 odds you can find in our football livescore section.
+                %br/
+                %br/
+                .green-text Canada
+                %br/
+                %ul
+                  %li - last match lost 0 - 1 against Costa Rica (view Canada - Costa Rica details)
+                  %li - results in last 10 matches: won 3 matches, drawn 1 matches and lost 6 matches
+                  %li - scored 8 goals and conceded 19 goals in last 10 matches
+                  %li - more than 2.5 goals have been scored in 4 of last 10 matches
+                  %li - have scored in 5 of last 10 matches
+                %br/
+                .green-text Costa Rica
+                %br/
+                %ul
+                  %li - currently ranked on 2. place in World Cup Qualification CONCACAF 4th round
+                  %li - last match won 0 - 1 against Canada (view Canada - Costa Rica details)
+                  %li - results in last 10 matches: won 6 matches, drawn 3 matches and lost 1 matches
+                  %li - scored 12 goals and conceded 5 goals in last 10 matches
+                  %li - more than 2.5 goals have been scored in 1 of last 10 matches
+                  %li - have scored in 9 of last 10 matches
+                %br/
+                .green-text Canada Costa Rica betting facts based on last 1 head-to-head matches
+                %br/
+                %ul
+                  %li - in their last 1 H2H matches Canada didn't win any match, Costa Rica won 1 matches, and 0 matches finished without winner.
+                  %li - Canada scores on average 0 goals per match, Costa Rica scores 1 goals per match.
+                  %li - More than 2.5 goals have been scored in 0% of matches between these two teams
+                %br/
+                .green-text Event details:
+                %br/
+                %ul
+                  %li NAME: Canada-Costa Rica
+                  %li DATE: May 29, 2013
+                  %li TIME: 00:05 UTC
+                  %li VENUE: Commonwealth Stadium
+                  %li STREET: N/A
+        .right-side
+          .moduletable
+            %h3 Head to head
+            .custom
+              %ul
+                %a{:href => ""}
+                  %li.active
+                    .date 01.06.2013 17:00
+                    .teams Canada / Costa - Rica
+                    .score ñ÷åò: 4 - 0
+                %a{:href => ""}
+                  %li.second
+                    .date 01.06.2013 17:00
+                    .teams Canada / Costa - Rica
+                    .score ñ÷åò: 4 - 0
+                %a{:href => ""}
+                  %li
+                    .date 01.06.2013 17:00
+                    .teams Canada / Costa - Rica
+                    .score ñ÷åò: 4 - 0
+                %a{:href => ""}
+                  %li.second
+                    .date 01.06.2013 17:00
+                    .teams Canada / Costa - Rica
+                    .score ñ÷åò: 4 - 0
+                %ul.more-games
+                  %a{:href => ""}
+                    %li
+                      .date 01.06.2013 17:00
+                      .teams Canada / Costa - Rica
+                      .score ñ÷åò: 4 - 0
+                  %a{:href => ""}
+                    %li.second
+                      .date 01.06.2013 17:00
+                      .teams Canada / Costa - Rica
+                      .score ñ÷åò: 4 - 0
+                  %a{:href => ""}
+                    %li
+                      .date 01.06.2013 17:00
+                      .teams Canada / Costa - Rica
+                      .score ñ÷åò: 4 - 0
+                  %a{:href => ""}
+                    %li.second
+                      .date 01.06.2013 17:00
+                      .teams Canada / Costa - Rica
+                      .score ñ÷åò: 4 - 0
+              .more
+                Áîëüøå èãð
+          .moduletable
+            %h3 League standings
+            .custom
+              %ul.league
+                %a{:href => ""}
+                  %li
+                    1. Canada (65)
+                %a{:href => ""}
+                  %li.second
+                    2. Canada (65)
+                %a{:href => ""}
+                  %li
+                    3. Canada (65)
+                %a{:href => ""}
+                  %li.second
+                    4. Canada (65)
+                %a{:href => ""}
+                  %li.last
+                    5. Canada (65)
+        %div{:style => "clear:both;"}
+    %footer
+      .wrap-in-footer.auto
+        %ul.nav.menu2.main-menu
+          %li.item-112.active
+            %a.first{:href => "/"} Ôóòáîë
+          %li.item-113
+            %a{:href => "/index.php/tennis"} ÒÅÍÍÈÑ
+          %li.item-114
+            %a{:href => "/index.php?Itemid=112"} ÁÀÑÊÅÒÁÎË
+          %li.item-115
+            %a{:href => "/index.php?Itemid=112"} ÕÎÊÊÅÉ
+          %li.item-116
+            %a{:href => "/index.php?Itemid=112"} ÁÅÉÑÁÎË
+          %li.item-117
+            %a{:href => "/index.php?Itemid=112"} ÀÌÅÐÈÊÀÍÑÊÈÉ ÔÓÒÁÎË
+          %li.item-118
+            %a{:href => "/index.php?Itemid=112"} ÃÀÍÄÁÎË
+          %li.item-119
+            %a{:href => "/index.php?Itemid=112"} ÂÎËÅÉÁÎË
+          %li.item-120
+            %a{:href => "/index.php?Itemid=110"} ÐÅÃÁÈ-ÞÍÈÎÍ
+          %li.item-121
+            %a{:href => "/index.php?Itemid=111"} ÊÐÈÊÅÒ
+          %li.item-122
+            %a{:href => "/index.php?Itemid=122"} LIVESCORE
+        %div{:style => "clear:both;"}
+        %div
+          Our football livescore have live coverage from 559 worldwide soccer leagues, cups and tournaments with live updated
+          results, statistics, league tables and fixtures. Matches from all leagues have fast and accurate updates for minutes and scores, scorer
+          and assist, cards, substitutions, match statistics and many more. Live commentaries are available only for most popular football leagues:
+          England Barclay's EPL Premier League and FA Cup, Spain BBVA league, Copa del Rey and live Barcelona Real Madrid El Clasico match,
+          Italy Serie A and Coppa Italia, German Bundesliga and DFB pokal, France Ligue 1, Denmark Superligaen, Turkey Turkcell Super Lig and
+          UEFA Champions League. You can filter live, finished or scheduled matches, and in live "Bet365 odds" tab you can find dropping / rising odds
+          which could help you to predict match winner.
