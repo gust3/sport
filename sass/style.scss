@@ -7,12 +7,12 @@
 @import "compass/css3/border-radius";
 @include font-face("Droid", font-files("droidserif-regular.ttf", "droidserif-regular.woff", "droidserif-regular.svg", "droidserif-regular.eot"));
 
-
 $maincolor:#3B6675;
 $second-color:orange;
 $normal-font:12px tahoma;
 $small-font:10px tahoma;
 $second-font:11px "Droid";
+$big-font:22px "Droid";
 $border-color:#D2D0D0;
 $light-green:#DEF8DE;
 $dark-green:#267D26;
@@ -22,6 +22,7 @@ $light-yellow:#FAF4D6;
 $light-grass-green:#DAF2CB;
 $light-grey:#F8F8F8;
 $font-color:black;
+
 @import "_left-side.scss";
 @import "_main-menu.scss";
 @import "_right-side.scss";

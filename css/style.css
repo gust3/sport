@@ -633,18 +633,42 @@ table .score {
   margin: 0 auto;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 1, ../sass/_detail_football.scss */
+.team-img {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  border-left: 1px solid #d2d0d0;
+  border-right: 1px solid #d2d0d0;
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.team-name {
+  margin-top: 20px;
+  font: 22px "Droid";
+}
+
+/* line 1, ../sass/_detail_football.scss */
+.left-side .team-info li {
+  padding: 10px 10px 10px 10px;
+  background: #f8f8f8;
+}
+/* line 1, ../sass/_detail_football.scss */
+.left-side .team-info li:hover {
+  background: #f8f8f8;
+}
+
+/* line 32, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 div {
   height: auto;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body, html {
   margin: 0px;
   font: 12px tahoma;
@@ -652,7 +676,7 @@ body, html {
   width: 100%;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 header {
   background: url(../images/fon.jpg);
   height: 132px;
@@ -660,60 +684,60 @@ header {
   color: white;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 a {
   text-decoration: none;
   color: white;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 a:hover {
   color: orange;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .auto {
   margin: 0 auto;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .name {
   font-size: 24px;
   padding: 20px 0px 0px 20px;
   color: orange;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .slogan {
   margin-left: 20px;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .middle-wrap {
   width: 1000px;
 }
 
-/* line 94, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .content {
   width: 772px;
   float: left;
   margin-top: 22px;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .moduletable h3 {
   background: 170px 8px #2e5956 no-repeat;
   background-color: #3b6675;
@@ -730,86 +754,86 @@ ul {
   margin: 10px 0px 0px 0px;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 table .header {
   background: #2e5956;
   background-color: #3b6675;
   color: white;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 table .header td {
   border: 1px solid #3b6675;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 table td {
   padding: 10px;
   border: 1px solid #d2d0d0;
 }
 
-/* line 129, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 table .add {
   width: 5px;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 table .clock {
   width: 25px;
   text-align: center;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 table .last-symbol {
   text-align: center;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .add a {
   color: #2e5956;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .add a:hover {
   color: orange;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 table .second td {
   background: #F8F8F8;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .wrap-in-footer {
   width: 1000px;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 footer .main-menu li {
   float: left;
   text-transform: lowercase;
   margin-right: 5px;
 }
 
-/* line 165, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 footer .main-menu li:after {
   content: " | ";
 }
 
-/* line 169, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 footer .main-menu {
   padding-bottom: 30px;
   margin: 0 auto;
   width: 790px;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .pattern {
   background: url(../images/pattern.jpg) 0px 2px;
   position: relative;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .white-line {
   height: 2px;
   width: 735px;
@@ -817,7 +841,7 @@ footer .main-menu {
   position: absolute;
 }
 
-/* line 187, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .pattern-div {
   background: url(../images/pattern.jpg);
   height: 30px;
@@ -825,36 +849,36 @@ footer .main-menu {
   border-right: 1px solid #D6D9DE;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .border-bottom {
   border-bottom: 1px solid #D6D9DE;
   padding: 10px 0px 10px 0px;
   text-align: center;
 }
 
-/* line 200, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .green {
   background: #daf2cb;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .grey {
   background: #F5F7F8;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .margin-left-10 {
   margin-left: 10px;
 }
 
-/* line 212, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .opened .more {
   background: url(../images/arrow-down-opened.png) no-repeat;
   height: 10px;
   width: 12px;
 }
 
-/* line 218, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .more {
   background: url(../images/arrow-down.png) no-repeat;
   height: 12px;
@@ -865,12 +889,12 @@ footer .main-menu {
   cursor: pointer;
 }
 
-/* line 228, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .parent {
   position: relative;
 }
 
-/* line 232, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 footer {
   background: #3b6675;
   border-top: 2px solid orange;
