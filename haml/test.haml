@@ -1,2 +1,11 @@
-%strong{:class => "code", :id => "message"} 
-%div Hello, World!
+-#это HAML комментарий, которого в HTML видно не будет
+/а это HTML комментарий
+!!!
+%html
+  %head
+    %title Hamlapp
+    = stylesheet_link_tag :all
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body
+    = yield
